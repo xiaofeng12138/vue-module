@@ -1,0 +1,31 @@
+.button-ui{
+    margin-top: 20px;
+    padding: 20px 0;
+    border:none;
+    display: inline-block;
+    background:none;
+    text-align: center;
+    span{
+        display: inline;
+    }
+}
+.button-ui-main{
+    background-color: #ff7f56;
+    span{
+        color: #fff;
+    }
+}
+
+.button-ui-radius{
+    border-radius: 100px;
+}
+.button-ui-block{
+    display: block;
+    width: 100%;
+}
+.button-ui-large{
+    span{
+        padding: 17px 0;
+        font-size: 16px;
+    }
+}
