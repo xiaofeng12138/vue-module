@@ -4,7 +4,7 @@
         <div class="form-body " :class="{'active':active}">
             <div class="pr">
                 <van-field @focus="active = true" @blur="active = false" v-model="value" placeholder="请输入验证码"/>
-                <div class="code-button">
+                <div class="code-button color-main">
                     获取验证码
                 </div>
              </div>

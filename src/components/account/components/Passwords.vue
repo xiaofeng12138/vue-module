@@ -1,11 +1,13 @@
 <template>
     
-    <div class="form-item">
+    <div class="form-item" :style="innerStyle">
         <div class="form-body " :class="{'active':active}">
             <div class="pr">
                 <van-field :type='form_type' @focus="active = true" @blur="active = false" v-model="value" placeholder="请输入验证码"/>
                 <div class="filed-right-inner">
-                    <i class="icon icon-size-27" :class="form_type === 'password'? 'icon-eye-off':'icon-eye-on'" @click="toggleView"></i>
+                    <i class="icon-size-27"  @click="toggleView">
+                        <svg-icon :iconName="form_type === 'password'? 'eyeOff':'eye'" className ='icon-size-27 svg-password'/>
+                    </i>
                 </div>
              </div>
         </div>
@@ -16,6 +18,12 @@
 <script>
 
 export default {
+    props:{
+        innerStyle:{
+            type:Object,
+            default:()=>{}
+        }
+    },
    data(){
        return {
            value:"11111",

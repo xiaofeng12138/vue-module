@@ -1,11 +1,11 @@
 <template>
     <div class="usernametype">
-        <li class="color-c">
-            <i class="icon icon-size-18 mb--3 icon-emial"></i>
+        <li class="color-c active" >
+             <svg-icon iconName ='phone' className ='icon-size-18  mb--3 svg-white'/>
             手机
         </li>
         <li class="color-c">
-            <i class="icon icon-size-18 mb--3 icon-emial"></i>
+             <svg-icon iconName ='email' className ='icon-size-18  mb--3 svg-white'/>
             邮箱
         </li>
     </div>
@@ -29,8 +29,12 @@ export default {
             border-radius: 100px;
             line-height: 30px;
             font-size: 16px;
-            color: #fff;
-            background-color: #999;
+            color: #ccc;
+            background-color: #fff;
+            &.active{
+               background-color: $color-main;
+               color:#fff;
+            }
         }
     }
 </style>

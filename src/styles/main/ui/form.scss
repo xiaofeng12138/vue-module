@@ -9,7 +9,7 @@
     border-style: solid;
     border-color: #fff;
     &.active{
-      border-color: #ff7f56;
+      border-color: $color-main;
     }
     .van-cell{
         padding:0;
